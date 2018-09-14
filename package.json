@@ -1,0 +1,11 @@
+{
+	"name": "natours",
+	"version": "1.0.0",
+	"description": "Landing page for natours",
+	"main": "index.js",
+	"author": "<Renê-Boaventura-Neto> <<reneboaventuraneto@gmail.com>>",
+	"license": "MIT",
+	"devDependencies": {
+		"node-sass": "^4.9.3"
+	}
+}
