@@ -417,9 +417,15 @@ body {
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   transition: all 0.3s; }
+  @media (max-width: 75em) {
+    .feature-box {
+      padding: 2rem;
+      height: 35rem; } }
   @media (max-width: 56.25em) {
     .feature-box {
-      padding: 2rem; } }
+      padding: 2rem;
+      height: auto;
+      padding-bottom: 7rem; } }
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
   .feature-box__icon {
@@ -552,8 +558,14 @@ body {
     vertical-align: middle;
     padding: 3rem 5rem; }
   .popup__img {
-    display: block;
-    width: 100%; }
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: screen;
+    background-position: center; }
+    .popup__img--1 {
+      background-image: url(../img/nat-8.jpg); }
+    .popup__img--2 {
+      background-image: url(../img/nat-9.jpg); }
   .popup__text {
     font-size: 1.4rem;
     margin-bottom: 4rem;
@@ -585,6 +597,31 @@ body {
     line-height: 1; }
   .popup__close:hover {
     color: #55c57a; }
+  @media (max-width: 75em) {
+    .popup__left {
+      width: 100%;
+      display: block; }
+    .popup__right {
+      display: block;
+      width: 100%; }
+    .popup__img--2 {
+      display: none; }
+    .popup__text {
+      -moz-column-count: 1;
+      -moz-column-gap: none;
+      -moz-column-rule: none;
+      column-count: 1;
+      column-gap: none;
+      column-rule: none; }
+    .popup__close:link, .popup__close:visited {
+      color: #fff;
+      font-weight: 700; } }
+  @media (max-width: 37.6em) {
+    .popup {
+      overflow-y: auto; }
+      .popup__content {
+        margin: 7rem 0;
+        width: 90%; } }
 
 .story {
   width: 75%;
@@ -897,9 +934,12 @@ body {
   background-color: #f7f7f7;
   padding: 25rem 0;
   margin-top: -20vh; }
+  @media (max-width: 75em) {
+    .section-about {
+      padding: 25rem 3rem; } }
   @media (max-width: 56.25em) {
     .section-about {
-      padding: 20rem 0; } }
+      padding: 30rem 0; } }
 
 .section-features {
   padding: 20rem 0;
@@ -909,6 +949,9 @@ body {
   margin-top: -10rem; }
   .section-features > * {
     transform: skewY(7deg); }
+  @media (max-width: 75em) {
+    .section-features {
+      padding: 20rem 3rem; } }
   @media (max-width: 56.25em) {
     .section-features {
       padding: 10rem 0; } }

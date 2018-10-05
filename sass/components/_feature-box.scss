@@ -7,8 +7,15 @@
 	box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
 	transition: all 0.3s;
 
+	@include respond(tab-land) {
+		padding: 2rem;
+		height: 35rem;
+	}
+
 	@include respond(tab-port) {
 		padding: 2rem;
+		height: auto;
+		padding-bottom: 7rem;
 	}
 
 	&:hover {
