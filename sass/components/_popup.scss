@@ -55,9 +55,21 @@
 		background-position: center;
 		&--1 {
 			background-image: url(../img/nat-8.jpg);
+
+			@media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+				only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+				only screen and (min-width: 90em) {
+				background-image: url(../img/nat-8-large.jpg);
+			}
 		}
 		&--2 {
 			background-image: url(../img/nat-9.jpg);
+
+			@media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+				only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+				only screen and (min-width: 90em) {
+				background-image: url(../img/nat-9-large.jpg);
+			}
 		}
 	}
 
